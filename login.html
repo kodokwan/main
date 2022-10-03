@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+        .title{
+            position:absolute;
+            left: 50%;
+            transform: translate(-50%,0);
+            font-size: 50px;
+        }.frame{
+            position: absolute;
+            left: 50%;
+            top:150px;
+            transform: translate(-50%,0);
+            font-size: 30px;
+        }.frame input{
+            
+            font-size: 30px;
+        }article{
+            border: 5px;
+        }.category{
+            position: absolute;
+            left: 50%;
+            border:1px solid gold;
+            width: 1100px;
+            height: 400px;
+            transform: translate(-50%,0);
+        }.log_in{
+            position: absolute;
+            left: 50%;
+            top : 350px;
+            transform: translate(-50%,0);
+            background-color: dodgerblue;
+            color: black;
+            border: 0px;
+            border-radius: 5px;
+            font-size: larger;
+            font-family: 'Song Myung', serif;
+        }.logo{
+            position: absolute;
+            top: 14px;
+            width: 85px;
+            height: 85px;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="category" >        
+        <img src="logo2.png" class="logo" onclick="location.href= 'main.html';">
+        <article>
+            <h1 class="title">log in</h1>
+            <div class="frame">
+                <div class="id">
+                    id : <input id="id">
+                </div>
+                <div class="pw">
+                    password : <input id="pw" type="password">
+                </div>
+            </div>
+            <button class="log_in" id="log_in" onclick="log_in_user();">log in</button>
+        </article>
+    </div>
+</body>
+</html>

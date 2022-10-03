@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        .nav{
+            background-color:blue;
+            height: 100px;
+            border-radius: 10px;
+            font-size: 50px;
+            color: white;
+        }.nav-home{
+            position: absolute;
+            left: 27%;
+            top: 20px;
+            text-decoration: none;
+            color: white;
+
+        }.nav-login{
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            text-decoration: none;
+            color: white;
+            transform: translate(-50%,0%);
+        }.nav-signin{
+            position: absolute;
+            right: 27%;
+            top: 20px;
+            text-decoration: none;
+            color: white;
+            
+        }.main-contents{
+            font-size: 100px;
+        }.logo{
+            position: absolute;
+            top: 14px;
+            width: 85px;
+            height: 85px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <img src="logo.png" class="logo" onclick="location.href= 'main.html';">
+        <a href="main.html" class="nav-home">home</a>
+        <a href="login.html" class="nav-login">log in</a>
+        <a href="signup.html" class="nav-signin">sign up</a>
+    </nav>
+    <div class="main-contents-box">
+        <p class="main-contents">(x!+x) mod x^2 = 0 (x는 소수)</p>
+    </div>
+</body>
+</html>
